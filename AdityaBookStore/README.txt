@@ -18,3 +18,5 @@ Date: 11/8
 0940: DropDown Added.
 0943: Testing New Ui.
 0945: Dropdown Not Working.
+
+094: Dropdown Working Error Solved.
