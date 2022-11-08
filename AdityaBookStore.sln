@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdityaBookStore", "AdityaBookStore\AdityaBookStore.csproj", "{18A25358-2025-450E-87F5-273FA0AB1A84}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdityaBooks.DataAccess", "AdityaBooks.DataAccess\AdityaBooks.DataAccess.csproj", "{595069FA-DB13-4554-891B-016F6FF539E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdityaBooks.Models", "AdityaBooks.Models\AdityaBooks.Models.csproj", "{E3058ADE-7DF0-4169-8A81-0D0023ECA2FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdityaBooks.Utlilty", "AdityaBooks.Utlilty\AdityaBooks.Utlilty.csproj", "{776AFCD6-B6CA-4206-87D5-40F0F9215765}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{18A25358-2025-450E-87F5-273FA0AB1A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18A25358-2025-450E-87F5-273FA0AB1A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18A25358-2025-450E-87F5-273FA0AB1A84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{595069FA-DB13-4554-891B-016F6FF539E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{595069FA-DB13-4554-891B-016F6FF539E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{595069FA-DB13-4554-891B-016F6FF539E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{595069FA-DB13-4554-891B-016F6FF539E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3058ADE-7DF0-4169-8A81-0D0023ECA2FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3058ADE-7DF0-4169-8A81-0D0023ECA2FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3058ADE-7DF0-4169-8A81-0D0023ECA2FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3058ADE-7DF0-4169-8A81-0D0023ECA2FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{776AFCD6-B6CA-4206-87D5-40F0F9215765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{776AFCD6-B6CA-4206-87D5-40F0F9215765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{776AFCD6-B6CA-4206-87D5-40F0F9215765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{776AFCD6-B6CA-4206-87D5-40F0F9215765}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
