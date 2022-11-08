@@ -30,3 +30,8 @@ Resolve: Microsoft.AspNetCore.Identity.EntityFrameworkCore Install.
 
 Issue: Namespace Not Found 'ErrorViewModel'.
 Resolve: using AdityaBookStore.Models.ViewModels; line added in HomeController.cs file.
+
+1032:
+
+Customer Area Added
+Moved files into Customer Controller folders.
