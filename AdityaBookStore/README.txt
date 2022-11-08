@@ -21,3 +21,12 @@ Date: 11/8
 
 0947: Dropdown Working Error Solved.
 0958: New Class Project Added.
+
+1019:
+Issue: Wrong nuget Install
+Resolve: Microsoft.AspNetCore.Identity.EntityFrameworkCore Install.
+
+1024:
+
+Issue: Namespace Not Found 'ErrorViewModel'.
+Resolve: using AdityaBookStore.Models.ViewModels; line added in HomeController.cs file.
