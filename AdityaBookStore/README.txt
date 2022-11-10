@@ -18,7 +18,7 @@ Date: 11/8
 0940: DropDown Added.
 0943: Testing New Ui.
 0945: Dropdown Not Working.
-Issue: Code Was Not complete - didm't see the link first.
+Issue: Code Was Not complete - didn't see the link first.
 Resolve: data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" Missing code Added.
 
 0947: Dropdown Working Error Solved.
@@ -49,3 +49,34 @@ Project reference Added in AdityaBooks.Utility of
 
 New Admin Area Added
 Controller Folder deleted from the main project.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Date: 2022/11/10
+
+0959:
+
+Repo.. Clone to new Terminal.
+
+Starting Assignment 2 Part 2.
+
+Checking appsettings.json connection string.
+
+1011:
+
+Creating Migration... Changed Database Connection name.
+
+Adding Migration using NuGet Manager Console.
+
+Command Used: add-migration AddDefaultIdentityMigration
+Issue: Project Target to add-migration is wrong.
+Resolve: Changing Default Project from AdityaBookStore > AdityaBooks.DataAccess
+
+1016:
+
+Migration Added Successfully in AdityaBooks.DataAcess. ( namespace AdityaBooks.DataAccess.Migrations ).
+
+1019:
+
+Updating Database.
+Command: update-database
