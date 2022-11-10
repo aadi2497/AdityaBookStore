@@ -1,9 +1,9 @@
 ﻿Author Name: Aditya Patel
-Project: AdityaBookStore
+Project: AdityaBookStore - Theme - Slate
 ID:0751432
 -----------------------------------------
 
-Date: 11/8
+Date: 2022/11/08
 
 0902: Project Created
 0902: Project Pushed to Git
@@ -80,3 +80,15 @@ Migration Added Successfully in AdityaBooks.DataAcess. ( namespace AdityaBooks.D
 
 Updating Database.
 Command: update-database
+
+1020: Database Update Completed.
+
+Database Reviewd Done.
+
+1053:
+
+New Category Class Added.
+New feild Id and Name and their validation.
+
+New Migration Added in Database
+command Used: add-migration AddCategoryToDb
