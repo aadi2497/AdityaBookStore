@@ -92,3 +92,20 @@ New feild Id and Name and their validation.
 
 New Migration Added in Database
 command Used: add-migration AddCategoryToDb
+
+1105:
+
+Issue: Category is inaccessible due to its proctection level.
+Resolve: Public word missing in Category Class after namespace.
+
+1108:
+
+Issue: The name 'AddCategoryToDb' is used by an existing migration.
+
+*** Possible Solution 1: Remove/Delete Existing Migration and  Re-run the the migration.
+
+Resolve: First remove the old migration using Command remove migration. Then re-run the add-migration Command.
+
+1127: 
+
+Updated Databse to add Categories in tables.
