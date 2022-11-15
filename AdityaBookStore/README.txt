@@ -125,3 +125,19 @@ Add more code lines to use Methods for CRUD.
 
 New Class file created in Repository Folder - Repository.cs
 Updating Respository.cs File.
+
+
+1105:
+
+Issue: Error in startup.cs file - Beacuse I messed up for name of the files.
+Resolve: Remove all the UnitofWork file and rebuild the application.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Date : 2022/11/15
+
+0832: 
+
+Cloned project to new TT.
+
+Soleving last night problem of UnitofWork.cs file
