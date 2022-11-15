@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AdityaBooks.DataAccess.Repository.IRepository;
+using AdityaBookStore.DataAccess.Data;
+using System;
 using System.Collections.Generic;
 using System.Text;
 

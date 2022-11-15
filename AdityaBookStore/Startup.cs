@@ -1,3 +1,5 @@
+using AdityaBooks.DataAccess.Repository;
+using AdityaBooks.DataAccess.Repository.IRepository;
 using AdityaBookStore.DataAccess.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -33,6 +35,7 @@ namespace AdityaBookStore
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddRazorPages();
         }
 
