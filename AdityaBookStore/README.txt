@@ -92,6 +92,8 @@ New feild Id and Name and their validation.
 
 New Migration Added in Database
 command Used: add-migration AddCategoryToDb
+Migration Addded : 20221110151625_AddDefaultIdentityMigration.cs
+				20221110162518_AddCategoryToDb.cs	
 
 1105:
 
@@ -109,8 +111,9 @@ Resolve: First remove the old migration using Command remove migration. Then re-
 1127: 
 
 Updated Databse to add Categories in tables.
-Migration Addded : 20221110151625_AddDefaultIdentityMigration.cs
-				20221110162518_AddCategoryToDb.cs	
+
+
+
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Date : 2022/11/14
