@@ -120,3 +120,8 @@ Downloaded Application to new TT.
 0952:
 
 Add more code lines to use Methods for CRUD.
+
+1002:
+
+New Class file created in Repository Folder - Repository.cs
+Updating Respository.cs File.
