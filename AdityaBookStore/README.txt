@@ -109,3 +109,14 @@ Resolve: First remove the old migration using Command remove migration. Then re-
 1127: 
 
 Updated Databse to add Categories in tables.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Date : 2022/11/14
+
+0937:
+Downloaded Application to new TT.
+
+0952:
+
+Add more code lines to use Methods for CRUD.
