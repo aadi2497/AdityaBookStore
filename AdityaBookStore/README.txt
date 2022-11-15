@@ -160,4 +160,8 @@ Push to GitHUb
 
 Creating New Controller - CategoryController......
 
+1112:
+
+Issure: Table Body content not visible.
+Resolve: Changed Bootstrap css then it works.
 
