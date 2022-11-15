@@ -109,7 +109,8 @@ Resolve: First remove the old migration using Command remove migration. Then re-
 1127: 
 
 Updated Databse to add Categories in tables.
-
+Migration Addded : 20221110151625_AddDefaultIdentityMigration.cs
+				20221110162518_AddCategoryToDb.cs	
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Date : 2022/11/14
