@@ -132,6 +132,10 @@ Updating Respository.cs File.
 Issue: Error in startup.cs file - Beacuse I messed up for name of the files.
 Resolve: Remove all the UnitofWork file and rebuild the application.
 
+1205:
+
+ISP_Call.cs and SP_Call.cs File created.
+
 --------------------------------------------------------------------------------------------------------------------------------------
 
 Date : 2022/11/15
@@ -141,3 +145,15 @@ Date : 2022/11/15
 Cloned project to new TT.
 
 Soleving last night problem of UnitofWork.cs file
+Problem Solved Bu recreating both files.
+Updated Startup.cs file.
+
+ 
+0845:
+Push to GitHUb
+
+0900:
+
+Creating New Controller - CategoryController......
+
+
