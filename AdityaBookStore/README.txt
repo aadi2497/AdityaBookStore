@@ -162,6 +162,30 @@ Creating New Controller - CategoryController......
 
 1112:
 
-Issure: Table Body content not visible.
+Issue: Table Body content not visible.
 Resolve: Changed Bootstrap css then it works.
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Date : 2022/11/22
+
+0729:
+
+Cloned project from Git to new Terminal
+
+Issue: Nuget Package Not Found
+Solve: Restore Nuget Package as this is new TT.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Date : 2022/11/23
+
+0731:
+Started Assignment 2 - Part III - Section 1.
+
+Step 1 Create CoverType.cs Completed in Model folder.
+step 2 Add CoverType Respository Completed.
+
+0732:
+
+Adding new migration.
