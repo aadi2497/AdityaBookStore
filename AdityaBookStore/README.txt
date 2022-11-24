@@ -226,3 +226,7 @@ IProductRepository Added.
 1118:
 
 UnitofWork and IUnitofWork Updated For product reference
+
+1147:
+
+Error On Part PPT Slide 3...... Start from here....
