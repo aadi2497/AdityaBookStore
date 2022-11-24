@@ -203,7 +203,26 @@ Break......
 Issue:Migration was not adding in app.
 Solve: Find some solution on web but they were not working then after long search found that I need to add "services.AddTransient<IUnitOfWork, UnitOfWork>();" this line in my startup and then All the build was succeeded.
 
+Migration Added: 20221124030400_AddCoverTypeToDb.
+
 1051:
 
 CoverType Working Perfectly.
 
+1101:
+
+Product Object Added to Database.
+
+Migration Added: 20221124035814_AddProductToDb.
+
+1111:
+Validation Migration: 20221124041000_AddValidationToProductToDb
+
+1117:
+
+Product Added to Repository
+IProductRepository Added.
+
+1118:
+
+UnitofWork and IUnitofWork Updated For product reference
