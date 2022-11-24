@@ -230,3 +230,10 @@ UnitofWork and IUnitofWork Updated For product reference
 1147:
 
 Error On Part PPT Slide 3...... Start from here....
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Date 2022/11/24
+
+Will Start From Last night error PPT slide 3...........
