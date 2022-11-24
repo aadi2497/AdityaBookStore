@@ -15,6 +15,7 @@ function loadDataTable() {
             { "data": "listPrice", "width": "15%" },
             { "data": "author", "width": "15%" },
             { "data": "category.name", "width": "15%" },
+            { "data": "covertype.name", "width": "15%" },
             {
                 "data": "id",
                 "render": function (data) {
