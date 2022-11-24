@@ -189,3 +189,21 @@ step 2 Add CoverType Respository Completed.
 0732:
 
 Adding new migration.
+
+0745:
+
+Errors..........
+
+0800:
+
+Break......
+
+1007:
+
+Issue:Migration was not adding in app.
+Solve: Find some solution on web but they were not working then after long search found that I need to add "services.AddTransient<IUnitOfWork, UnitOfWork>();" this line in my startup and then All the build was succeeded.
+
+1051:
+
+CoverType Working Perfectly.
+
