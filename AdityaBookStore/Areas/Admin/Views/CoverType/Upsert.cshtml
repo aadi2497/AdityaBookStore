@@ -6,16 +6,15 @@
 }
 
 <form method="post">
-    <div class="row p-3 border text-dark">
+    <div class="row p-3 border">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        @if(Model.Id == 1)
+        @if (Model.Id != 0)
         {
-            title = "Edit CoverType";
-            return;
+            // edit
+            title = "Edit Cover Type";
         }
-
         <div class="col-12 border-bottom">
-            <h2 class="text-white ">@title</h2>
+            <h2 class="text-primary">@title</h2>
         </div>
         <div class="col-8 pt-4">
             <div class="form-group row">
@@ -31,7 +30,7 @@
                 <div class="col-8 offset-4">
                     @if (Model.Id != 0)
                     {
-                        <partial name="_EditAndBackToListButton" modal="Model.Id" />
+                        <partial name="_EditAndBackToListButton" model="Model.Id" />
                     }
                     else
                     {
