@@ -241,3 +241,9 @@ Will Start From Last night error PPT slide 3...........
 Issue: IUniteof work Using statement error
 Solve: Used proper Using Statment > using Microsoft.AspNetCore.Mvc.Rendering;
 		Before I was Using > using Microsoft.AspNetCore.Mvc.ViewModels;
+
+--------------------------------------------------------------------------------------------------------------------
+
+Date 2022/11/30
+
+Starting Project Part 4..............

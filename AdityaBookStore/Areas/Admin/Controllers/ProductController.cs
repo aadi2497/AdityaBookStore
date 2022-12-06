@@ -21,6 +21,7 @@ namespace AdityaBookStore.Areas.Admin.Controllers
             _unitOfWork = unitOfWork;
             _hostEnvironment = hostEnvironment;
         }
+
         public IActionResult Index()
         {
             return View();
