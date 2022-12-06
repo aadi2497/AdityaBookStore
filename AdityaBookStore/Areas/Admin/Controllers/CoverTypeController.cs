@@ -1,11 +1,12 @@
 ﻿using AdityaBooks.DataAccess.Repository.IRepository;
 using AdityaBooks.Models;
+using AdityaBooks.Utlilty;
+using Dapper;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AdityaBookStore.Areas.Admin.Controllers
 {
     [Area("Admin")]
-
     public class CoverTypeController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -20,64 +21,70 @@ namespace AdityaBookStore.Areas.Admin.Controllers
             return View();
         }
 
-        public IActionResult upsert(int? id)
+        public IActionResult Upsert(int? id)
         {
-            CoverType CoverType = new CoverType();
+            CoverType coverType = new CoverType();
             if (id == null)
             {
-                return View(CoverType);
-
+                // this is for create
+                return View(coverType);
             }
-            CoverType = _unitOfWork.CoverType.Get(id.GetValueOrDefault());
-            if (CoverType == null)
+            // this is for edit
+            var parameter = new DynamicParameters();
+            parameter.Add("@Id", id);
+            coverType = _unitOfWork.SP_Call.OneRecord<CoverType>(SD.Proc_CoverType_Get, parameter);
+            if (coverType == null)
             {
                 return NotFound();
             }
-            return View();
+            return View(coverType);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Upsert(CoverType covertype)
+        public IActionResult Upsert(CoverType coverType)
         {
             if (ModelState.IsValid)
             {
-                if (covertype.Id == 0)
+                var parameter = new DynamicParameters();
+                parameter.Add("@Name", coverType.Name);
 
+                if (coverType.Id == 0)
                 {
-                    _unitOfWork.CoverType.Add(covertype);
-
+                    _unitOfWork.SP_Call.Execute(SD.Proc_CoverType_Create, parameter);
                 }
                 else
                 {
-                    _unitOfWork.CoverType.Update(covertype);
+                    parameter.Add("@Id", coverType.Id);
+                    _unitOfWork.SP_Call.Execute(SD.Proc_CoverType_Update, parameter);
                 }
                 _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));
             }
-            return View(covertype);
+            return View(coverType);
         }
 
         #region API CALLS
-        [HttpGet]
 
         public IActionResult GetAll()
         {
-            var allobj = _unitOfWork.CoverType.GetAll();
-            return Json(new { data = allobj });
+            var allObj = _unitOfWork.SP_Call.List<CoverType>(SD.Proc_CoverType_GetAll, null);
+            return Json(new { data = allObj });
         }
+
         [HttpDelete]
         public IActionResult Delete(int id)
         {
-            var objFromDb = _unitOfWork.CoverType.Get(id);
+            var parameter = new DynamicParameters();
+            parameter.Add("@Id", id);
+            var objFromDb = _unitOfWork.SP_Call.OneRecord<CoverType>(SD.Proc_CoverType_Get, parameter);
             if (objFromDb == null)
             {
                 return Json(new { success = false, message = "Error while deleting" });
-
             }
-            _unitOfWork.CoverType.Remove(objFromDb);
+            _unitOfWork.SP_Call.Execute(SD.Proc_CoverType_Delete, parameter);
             _unitOfWork.Save();
-            return Json(new { success = true, messasge = "Delete successful" });
+            return Json(new { success = true, message = "Delete Successful" });
         }
 
         #endregion
