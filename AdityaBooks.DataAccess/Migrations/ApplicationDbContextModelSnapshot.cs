@@ -83,6 +83,15 @@ namespace AdityaBooks.DataAccess.Migrations
                     b.Property<double>("ListPrice")
                         .HasColumnType("float");
 
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Price100")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Price50")
+                        .HasColumnType("float");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

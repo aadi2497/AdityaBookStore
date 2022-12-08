@@ -36,7 +36,7 @@ namespace AdityaBookStore
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            
+           
             services.AddRazorPages();
         }
 

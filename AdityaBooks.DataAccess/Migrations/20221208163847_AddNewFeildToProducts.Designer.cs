@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AdityaBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221124041000_AddValidationToProductToDb")]
-    partial class AddValidationToProductToDb
+    [Migration("20221208163847_AddNewFeildToProducts")]
+    partial class AddNewFeildToProducts
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -83,6 +83,15 @@ namespace AdityaBooks.DataAccess.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("ListPrice")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Price100")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Price50")
                         .HasColumnType("float");
 
                     b.Property<string>("Title")
