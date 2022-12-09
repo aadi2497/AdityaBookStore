@@ -23,8 +23,4 @@
     <ProjectReference Include="..\AdityaBooks.Utlilty\AdityaBooks.Utlilty.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\images\products\" />
-  </ItemGroup>
-
 </Project>

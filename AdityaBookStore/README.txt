@@ -247,3 +247,11 @@ Solve: Used proper Using Statment > using Microsoft.AspNetCore.Mvc.Rendering;
 Date 2022/11/30
 
 Starting Project Part 4..............
+
+--------------------------------------------------------------------------------------------------------------
+
+Date 2022/12/09
+
+Issue: Expections Due to unwanted feild added to product table.
+Solve: Product table deleted. 
+		New Migration Added - 20221209134006_AddNewProductsToDb
